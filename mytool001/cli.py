@@ -8,5 +8,5 @@ def main():
 
     # If no name is passed, ask interactively
     name = args.name or input("Enter your name: ")
-    time = args.time or input("Enter the time of day: ")
-    print(f"Hello, {name}! Good {time}")
+    time = args.time or input("Enter the time of day (Morning/AfterNoon/Evening/Night): ")
+    print(f"Hello, {name}! Good {time}.")
