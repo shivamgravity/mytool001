@@ -1,7 +1,12 @@
 import argparse
 
 def main():
-    parser = argparse.ArgumentParser(description="My first CLI tool")
-    parser.add_argument("name", help="Your name")
+    parser = argparse.ArgumentParser(description="A simple CLI tool that greets the user.")
+    parser.add_argument("name", nargs="?", help="Your name")
+    parser.add_argument("time", nargs="?", help="Morning/AfterNoon/Evening/Night")
     args = parser.parse_args()
-    print(f"Hello, {args.name}!")
+
+    # If no name is passed, ask interactively
+    name = args.name or input("Enter your name: ")
+    time = args.time or input("Enter the time of day: ")
+    print(f"Hello, {name}! Good {time}")
