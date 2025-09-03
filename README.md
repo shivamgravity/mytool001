@@ -24,15 +24,14 @@ pip install -e .
 
 ## Testing
 
-Install the pytest library if you don't have in your system.
+Install the developer requirements.
 
 ```bash
 pip install -r requirements-dev.txt
 ```
 
-Go the project root folder and the command pytest.
+Go to the project root folder and run the command *pytest*.
 
 ```bash
-cd mytool001
 pytest
 ```
